@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pi Productions</title>
-        <meta charset="UTF-8">
-       
+  <head>
+    <title>Pi Productions</title>
+    <meta charset="UTF-8" />
 
-        <!--custom css link-->
-        <link rel="stylesheet" href="css/index-style.css" type="tex/css">
+    <!--custom css link-->
+    <link type="text/css" href="index-style.css" rel="stylesheet" />
+    <!--boxicons css link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
 
-         <!--boxicons css link-->
-        <link rel="stylesheet"
-        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&
+        family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-          <!--google fonts link-->
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis/css2?family=Permanent+Maker&
-          family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        
-    </head>
-    
-    
-    <body>
-        <h1>Pi Productions</h1>
+  <header>
+    <a href="#" class="logo">Pi Productions</a>
+    <ul class="navlist">
+      <li><a href="#Inicio">Inicio</a></li>
+      <li><a href="#Dispositivos">Dispositivos</a></li>
+      <li><a href="#Sistemas_Operativos">Sistema Operativos</a></li>
+      <li><a href="#Sobre_Nosotros">Sobre nosotros</a></li>
+      <li><a href="#Contacto">Contacto</a></li>
+      <li><a href="#Informacion_Tecnica">Información Técnica</a></li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
 
-        <!--custom js link-->
-        <script src="js/script.js"></script>
+  <section class="hero">
+    <div class="hero-text">
+      <a name="Inicio"></a>
+      <h2>Inicio</h2>
+      <p>Una empresa que piensa en el futuro sin límites<sup>1</sup></p>
+      <a name="Dispositivos"></a>
+      <h2>Dispositivos</h2>
+      <p>Dispositivos infinitos de rendimientos<sup>2</sup></p>
+      <a name="#Sistemas_Operativos"></a>
+      <h2>Sistemas Operativos</h2>
+      <p>Una interfaz hecha a medida y optimizado para sacar el más provecho</p>
+      <a name="#Sobre_Nosotros"></a>
+      <h2>Sobre nosotros</h2>
+      <p>Buscamos un capitalismo justo y reducido al de hoy en día</p>
+      <a name="Contacto"></a>
+      <h2>Contacto</h2>
+      <a
+        href="mailto:msalom@santjosepobrer.es?subject=Correo desde HTML5&body=Buenos días S. Matías"
+        >Contacto con el Dr. Matías</a
+      >
+      <a name="Informacion_Tecnica"></a>
+      <p>Más información</p>
+    </div>
 
-        <header>
-        <a href="#" class="logo">Pi Productions</a> 
-            <img src="../im/header_index.jpeg" alt="Imágen de fondo">
-          
-          <ul>
-           <li><a href="#">Inicio</a>></li>
-           <li><a href="#">Sobre nosotros</a>></li>
-           <li><a href="#">Contacto</a>></li>
-            </ul>
-        </header>  
-
-    </body>
+    <div class="hero-img">
+      <img src="../im/Pi_Phone.jpg" />
+    </div>
+  </section>
+  <body>
+    <!--custom js link-->
+    <script src="js/script.js"></script>
+  </body>
 </html>
