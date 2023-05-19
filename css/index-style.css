@@ -33,7 +33,7 @@ header {
   display: flex;
 }
 
-.navlist a:link {
+.navlist a:link, a:visited{
   color: white;
   margin-left: 60px;
   font-size: 15px;
@@ -63,7 +63,7 @@ a:visited {
   background: linear-gradient(
     245.59deg,
     #1f2022 0%,
-    #1f2022 28.53%,
+    #812828 28.53%,
     #1f2022 75.52%
   );
   position: relative;
@@ -108,7 +108,7 @@ transition: ease 0.55s;
 
 .hero-img{
 width: 300px;
-margin-top: 150px;
+top: 10px;
 margin-left: 300px;
 transition: ease 0.55s;
 }
@@ -116,7 +116,7 @@ transition: ease 0.55s;
 .button{
 display: inline-block;
 color: white;
-background: #761294;
+background: #942112;
 border: 1px solid transparent;
 padding: 12px 30px;
 line-height: 1.4;
@@ -128,7 +128,7 @@ transition: all .55s ease;
 }
 
 .button:hover{
-    background: #b344d4;;
+    background: #f02c2c;;
     border: 1px solid white;
     transform: translateX(8px);
     cursor: pointer;
