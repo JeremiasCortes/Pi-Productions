@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pi Productions</title>
+    <meta charset="UTF-8" />
+
+    <!--custom css link-->
+    <link type="text/css" href="../css/Contacto.css" rel="stylesheet" />
+    <!--boxicons css link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    
+    <!--google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&
+        family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  
+    <!--Menú de arriba-->
+  <header>
+    <a href="#" class="logo">Pi Productions</a>
+    <ul class="navlist">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Dispositivos.html">Dispositivos</a></li>
+      <li><a href="Sistemas_Operativos.html">Sistema Operativos</a></li>
+      <li><a href="Sobre_Nosotros.html">Sobre nosotros</a></li>
+      <li><a href="Contacto">Contacto</a></li>
+      <li><a href="#Informacion_Tecnica">Información Técnica</a></li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-txt">
+        <a name="Contacto"></a> <h2>Contacto</h2>
+        <p>Puedes ponerte en contacto con nosotros mediante el siguiente formulario:</p>
+        <form action="#" method="post" id="formulario_de_contacto">
+            Nombres:
+            <input type="text" name="username" id="username" placeholder="Nombre">
+            <br><br>
+            Apellidos:
+            <input type="password" name="lastname" id="lastname" placeholder="Apellidos">
+            <br><br>
+            Correo electronico: 
+            <input type="email" name="email" id="email" placeholder="Correo">
+            <br><br>
+            Genero: 
+            <input type="radio" value="m" name="gender">Masculino
+            <input type="radio" value="f" name="gender">Femenino
+            <input type="radio" value="p" name="gender">Prefiero no decirlo
+            <input type="radio" value="o" name="gender">Otr@s
+            <br><br>
+            Motivos por el que deseas ponerte en contacto 
+            <br>
+            <input type="radio" value="0" name="age" class="tab">Otros métodos de pago<br>
+            <input type="radio" value="1" name="age" class="tab">Asesoramiento o resolver dudas<br>
+            <input type="radio" value="2" name="age" class="tab">Servicio técnico<br>
+            <input type="radio" value="3" name="age" class="tab">Otros
+            <br><br>
+            Como deseas que te contactemos
+            <br>
+            <input type="checkbox" value="html" name="lenguaje" class="tab">Teléfono<br>
+            <input type="checkbox" value="J" name="lenguaje" class="tab">Correo electronico<br>
+            <input type="checkbox" value="C#" name="lenguaje" class="tab">Mensajería (Whassapp)<br>
+            <input type="checkbox" value="js" name="lenguaje" class="tab">Mensajería (iMensajes)<br>
+            <input type="submit" value="Enviar Información">
+            <input type="reset" value="Reiniciar información">
+        </form>
+    </div>
