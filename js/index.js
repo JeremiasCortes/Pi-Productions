@@ -3,7 +3,7 @@ let navlist = document.querySelector('.navlist');
 
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
-    menu.classList.toggle('open');
+    navlist.classList.toggle('open');
 };
 
 const sr = ScrollReveal ({

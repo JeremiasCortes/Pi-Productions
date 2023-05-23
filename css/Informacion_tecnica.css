@@ -21,13 +21,7 @@
     transition: ease 0.55s;
   }
   
-  .logo {
-    font-size: 30px;
-    font-weight: 800;
-    color: white;
-    margin-left: 20px;
-    
-  }
+
 
   .hero {
     height: 100%;
@@ -58,7 +52,6 @@
     font-weight: 600;
     border-bottom: 2px solid transparent;
     transition: all 0.55s ease;
-    display: flex;
   }
   
   .navlist a:hover,
@@ -91,3 +84,11 @@
       margin-bottom: 10px;
       transition: ease 0.55s;
       }    
+
+      #formulario_de_contacto{
+        color: white;
+      }
+
+      #tabla{
+        color: white;
+      }
