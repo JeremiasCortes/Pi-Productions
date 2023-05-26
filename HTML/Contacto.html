@@ -37,15 +37,15 @@
   </header>
   <body>
     <section class="hero">
-      <div class="hero-txt">
         <a name="Contacto"></a>
-        <h2>Contacto</h2>
+        <div class="hero-txt-contacto"><h2>Contacto</h2>
         <p>
           Puedes ponerte en contacto con nosotros mediante el siguiente
           formulario:
-        </p>
+        </p></div>
         <form action="#" method="post" id="formulario_de_contacto">
-          Nombres:
+          <div class="hero-txt">
+            Nombres:
           <input
             type="text"
             name="username"
@@ -69,7 +69,10 @@
           <input type="radio" value="f" name="gender" />Femenino
           <input type="radio" value="p" name="gender" />Prefiero no decirlo
           <input type="radio" value="o" name="gender" />Otr@s <br /><br />
-          Motivos por el que deseas ponerte en contacto
+          
+          </div>
+
+          <div class="hero-txt1">Motivos por el que deseas ponerte en contacto
           <br />
           <input type="radio" value="0" name="age" class="tab" />Otros métodos
           de pago<br />
@@ -105,6 +108,8 @@
           <input type="reset" value="Reiniciar información" />
         </form>
       </div>
+
     </section>
+  
   </body>
 </html>

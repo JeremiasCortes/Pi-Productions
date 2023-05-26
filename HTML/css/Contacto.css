@@ -1,89 +1,228 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Kalam", cursive;
-    list-style: none;
-    text-decoration: none;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kalam", cursive;
+  list-style: none;
+  text-decoration: none;
+}
 
-  header {
-    position: fixed;
-    right: 0;
-    top: 40px;
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2px 9%;
-    background: transparent;
-    transition: ease 0.55s;
-  }
+header {
+  position: fixed;
+  right: 0;
+  top: 40px;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 9%;
+  background: transparent;
+  transition: ease 0.55s;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  margin-left: 20px;
   
+}
 
+.navlist {
+ display: flex;
+
+}
+
+.navlist a:link,
+a:visited {
+  color: white;
+  margin-left: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all 0.55s ease;
+  
+}
+
+.navlist a:hover,
+a:visited {
+  border-bottom: 2px solid white;
+}
+
+#menu-icon {
+  color: white;
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+  transition: ease 0.55s;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(245.59deg,
+  #777f91 0%,
+  #818028 28.53%,
+  #696f7c 75.52%);
+  position: relative;
+  display: grid;
+  align-items: center;
+
+}
+
+section {
+  padding: 0 1rem;
+  
+}
+.hero-txt-contacto {
+  top: 9rem;
+  position: absolute;
+  margin-left: 10rem;
+}
+
+.hero-txt h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: white; 
+  margin-bottom: 1px;
+  font-family: "Lobster", cursive;
+  transition: ease 0.55s;
+}
+
+.hero-txt {
+  position: relative;
+  float: left;
+  width:40%;
+  
+ 
+  margin-bottom: 0px;
+  color: white;
+  font-size: 18px;
+  transition: ease 0.55s;  
+}
+
+
+
+.hero-txt1  {
+  position: relative;
+  float: left;
+  width:40%;
+ margin-left: 140px;
+  
+  color: white;
+  font-size: 18px;
+  margin-bottom: 0px;
+  transition: ease 0.55s;  
+
+}
+
+
+
+@media (max-width: 1535px) {
+  header {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+
+  .icons {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 1460px) {
+  section {
+    padding: 0 12%;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 1340px) {
+  .hero-img {
+    display: flex;
+    margin-top: 150px;
+  }
+
+  .hero-txt h1 {
+    font-size: 75px;
+    margin: 0 0 30px;
+  }
+
+  .hero-txt p {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 1195px) {
+  section {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+
+  .hero-txt {
+    padding-top: 115px;
+  }
+  .hero-img {
+    width: 560px;
+    height: auto;
+    display: flex;
+  }
 
   .hero {
     height: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(
-      245.59deg,
-      #1f2022 0%,
-      #1f2022 28.53%,
-      #1f2022 75.52%
-    );
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  .icons {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  #menu-icon {
+    display: block;
+  }
+  .navlist {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 40vh;
+    background: #812828;
+    display: flex;
     align-items: center;
-    gap: 2rem;
+    flex-direction: column;
+    padding: 50px 20px;
+    transition: all 0.55s ease;
+    
     
   }
 
-  .navlist {
+  .navlist.open{
+    right: 0;
+    
+  }
+
+  .navlist a {
+    display: block;
+    margin: 7px 0;
+    margin-left: 0;
+  }
+  .navlist.open {
+    right: 0%;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-img {
+ 
     display: flex;
   }
-  
-  .navlist a:link, a:visited{
-    color: white;
-    margin-left: 60px;
-    font-size: 15px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    transition: all 0.55s ease;
-  }
-  
-  .navlist a:hover,
-  a:visited {
-    border-bottom: 2px solid white;
-  }
-  
-  #menu-icon {
-    color: white;
-    font-size: 35px;
-    z-index: 10001;
-    cursor: pointer;
-    display: none;
-    transition: ease 0.55s;
-  }
+}
 
-  .hero-txt h2{
-    font-size: 35px;
-    font-weight: 400;
-    color: white;
-    margin-bottom: 10px;
-    font-family: "Lobster", cursive;
-    transition: ease 0.55s;
-    
-    }
-    .hero-txt p{
-      color: white;
-      font-size: 18px;
-      line-height: 1.9;
-      margin-bottom: 10px;
-      transition: ease 0.55s;
-      }    
+
 
       #formulario_de_contacto{
         color: white;

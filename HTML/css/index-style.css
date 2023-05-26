@@ -26,11 +26,13 @@ header {
   font-weight: 800;
   color: white;
   margin-left: 20px;
-  
+  width: 200px;
+  height: 100px;
+
 }
 
 .navlist {
- display: flex;
+  display: flex;
 
 }
 
@@ -42,7 +44,7 @@ a:visited {
   font-weight: 600;
   border-bottom: 2px solid transparent;
   transition: all 0.55s ease;
-  
+
 }
 
 .navlist a:hover,
@@ -65,12 +67,10 @@ a:visited {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(
-    245.59deg,
-    #1f2022 0%,
-    #812828 28.53%,
-    #1f2022 75.52%
-  );
+  background: linear-gradient(245.59deg,
+      #1f2022 0%,
+      #812828 28.53%,
+      #1f2022 75.52%);
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -82,15 +82,6 @@ section {
   padding: 0 20%;
 }
 
-.hero-txt h2 {
-  font-size: 35px;
-  font-weight: 400;
-  color: white;
-  margin-bottom: 10px;
-  font-family: "Lobster", cursive;
-  transition: ease 0.55s;
-}
-
 .hero-txt h1 {
   font-size: 40px;
   font-weight: 400;
@@ -98,6 +89,8 @@ section {
   margin-bottom: 10px;
   font-family: "Lobster", cursive;
   transition: ease 0.55s;
+
+  top: 100px;
 }
 
 .hero-txt p {
@@ -106,15 +99,19 @@ section {
   line-height: 1.9;
   margin-bottom: 10px;
   transition: ease 0.55s;
+
+  top: 100px;
 }
 
 .hero-img {
-  width: 300px;
-  top: 10px;
-  margin-left: 300px;
+  position: absolute;
+  width: 230px;
+  top: 140px;
+  margin-left: 250px;
   transition: ease 0.55s;
-  
+
 }
+
 
 .button {
   display: inline-block;
@@ -194,6 +191,7 @@ section {
     margin-bottom: 25px;
   }
 }
+
 @media (max-width: 1195px) {
   section {
     padding: 0 3%;
@@ -203,6 +201,7 @@ section {
   .hero-txt {
     padding-top: 115px;
   }
+
   .hero-img {
     width: 560px;
     height: auto;
@@ -214,6 +213,7 @@ section {
     gap: 1rem;
     grid-template-columns: 1fr;
   }
+
   .icons {
     display: none;
   }
@@ -223,6 +223,7 @@ section {
   #menu-icon {
     display: block;
   }
+
   .navlist {
     position: absolute;
     top: 100%;
@@ -235,13 +236,13 @@ section {
     flex-direction: column;
     padding: 50px 20px;
     transition: all 0.55s ease;
-    
-    
+
+
   }
 
-  .navlist.open{
+  .navlist.open {
     right: 0;
-    
+
   }
 
   .navlist a {
@@ -249,6 +250,7 @@ section {
     margin: 7px 0;
     margin-left: 0;
   }
+
   .navlist.open {
     right: 0%;
   }
@@ -256,7 +258,7 @@ section {
 
 @media (max-width: 680px) {
   .hero-img {
- 
+
     display: flex;
   }
 }
