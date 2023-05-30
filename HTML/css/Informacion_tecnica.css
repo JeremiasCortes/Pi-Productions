@@ -160,6 +160,7 @@ section {
 table {
   background-color: rgb(175, 175, 175);
   width: 1000px;
+  border:3px solid black;
 }
 
 @media (max-width: 1535px) {
@@ -266,4 +267,12 @@ table {
 
     display: flex;
   }
+}
+
+.arribadeltodo {
+  background-color: rgb(97, 96, 96);
+}
+
+.evenrow {
+  background-color: rgb(146, 146, 143);
 }

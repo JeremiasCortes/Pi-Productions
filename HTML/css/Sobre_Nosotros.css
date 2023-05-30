@@ -262,3 +262,9 @@ section {
     display: flex;
   }
 }
+
+.Sobrenosotros {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 850px;
+}

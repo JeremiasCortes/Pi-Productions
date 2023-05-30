@@ -64,8 +64,8 @@ a:visited {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(245.59deg,
-  #777f91 0%,
-  #818028 28.53%,
+  #576c9b 0%,
+  #418128 28.53%,
   #696f7c 75.52%);
   position: relative;
   display: grid;
@@ -227,3 +227,10 @@ section {
       #formulario_de_contacto{
         color: white;
       }
+
+.TelefonoIMG {
+position: absolute;
+width: 200px;
+height: 200px;
+margin-left: 1100px;
+}

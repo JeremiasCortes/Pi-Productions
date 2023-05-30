@@ -262,3 +262,10 @@ section {
     display: flex;
   }
 }
+.dispositivosjpg {
+  position: absolute;
+  height: 350px;
+  width: 400px;
+  margin-left: 800px;
+  transition: 2.5s ease;
+}
